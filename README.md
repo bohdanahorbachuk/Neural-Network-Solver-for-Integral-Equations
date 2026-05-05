@@ -21,7 +21,9 @@
    git clone [https://github.com/ВАШ_ЮЗЕРНЕЙМ/Neural-Network-Solver-for-Integral-Equations.git](https://github.com/ВАШ_ЮЗЕРНЕЙМ/Neural-Network-Solver-for-Integral-Equations.git)
    cd Neural-Network-Solver-for-Integral-Equations
 
-2. Створити та активувати віртуальне середовище:Bashpython -m venv .venv
+2. Створити та активувати віртуальне середовище:
+   ```bash
+   python -m venv .venv
 
 # Для macOS / Linux:
 source .venv/bin/activate
@@ -29,12 +31,14 @@ source .venv/bin/activate
 # Для Windows:
 .venv\Scripts\activate
 
-3. Встановити залежності:Bashpip install -r requirements.txt
+3. Встановити залежності:
+   ```bash
+   pip install -r requirements.txt
 
-4. Запустити веб-інтерфейс:
+5. Запустити веб-інтерфейс:
    ```bash
    streamlit run app.py
-   
+
 Структура інтерфейсу (Usage)У бічній панелі Streamlit-додатку доступні такі налаштування:
 Вибір межі області (Г2): Доступні тестові області (зміщене коло, "гантеля", еліпс) для перевірки узагальнюючої здатності алгоритму.
 Параметри дискретизації: Вибір кількості вузлів інтегрування $N$ для побудови матриці квадратур.
